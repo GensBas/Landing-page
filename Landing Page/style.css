@@ -6,7 +6,7 @@ html
 body
 {
 	background-image: url(nuage1.jpg);
-	background-repeat: no-repeat;
+	
 	background-size: 100%;
 
 }
@@ -16,6 +16,7 @@ form
 
 position: relative;
 margin: auto;
+margin-top: 2%;
 display: flex;
 justify-content:center;
 justify-content: space-around;
@@ -24,11 +25,17 @@ text-align: center;
 
 }
 
-.container3
+#bloc1
 {
-display: flex;
-flex-direction: column;
-text-align: center;
+	flex-direction: column;	
+}
+
+#container3
+{ 
+	margin-top: 1%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .scontainer1
@@ -39,7 +46,9 @@ text-align: center;
 }
 
 .scontainer2
-{}
+{
+
+}
 
 .container1
 {
