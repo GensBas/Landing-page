@@ -4,6 +4,23 @@
 			<meta charset="utf-8">
 			<link rel="stylesheet" type="text/css" href="style.css">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+			
+  <style>
+    .hoverable {
+      cursor:default;
+      color:#000;
+      text-decoration:none;
+    }
+    .hoverable .hover {
+      display:none;
+    }
+    .hoverable:hover .normal {
+      display:none;
+    }
+    .hoverable:hover .hover {
+      display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
+    }
+  </style>
 			<title>
 				
 			</title>
@@ -15,8 +32,7 @@
 		<div id="toppage">
 			<img id="pngnaruto" src="narutopng.png">
 			<img id="boruto" src="boruto.jpg">
-			<h1 id="entete">LandingPage   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp NarutoFanBase</h1>
-			<h1 id="entetebis">LandingPage   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp BorutoFanBase</h1>
+			<h1 id="entete" class="hoverable"><span class="normal">LandingPage   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp NarutoFanBase</span> <span class="hover">LandingPage   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp BorutoFanBase</span></h1>
 			
 		</div>	
 
@@ -110,4 +126,41 @@
 	</body>
 
 
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+  <style>
+    .hoverable {
+      cursor:default;
+      color:#000;
+      text-decoration:none;
+    }
+    .hoverable .hover {
+      display:none;
+    }
+    .hoverable:hover .normal {
+      display:none;
+    }
+    .hoverable:hover .hover {
+      display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
+    }
+  </style>
+</head>
+<body>
+  <a href="javascript://" class="hoverable">
+    <img src="http://png-2.findicons.com/files/icons/1577/danish_royalty_free/32/forward_button.png" class="normal" border="0" /><img src="http://png-4.findicons.com/files/icons/1577/danish_royalty_free/32/forward_button_white.png" class="hover" border="0" />
+  </a>
+  
+  <a href="javascript://" class="hoverable">
+    <span class="normal">Mouse over me!</span><span class="hover">Hello world!!!</span>
+  </a>
+</body>
 </html>

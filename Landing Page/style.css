@@ -75,6 +75,9 @@ justify-content: center;
 	justify-content: space-around;
 }
 
+#naruto{
+	width: 60%;
+}
 
 .chall2
 {
@@ -93,7 +96,7 @@ justify-content: center;
     position: absolute;
     z-index:1;
     margin-left: 56em;
-    transition: 2s;
+    transition: 1s;
    opacity: 0;
 }
 
@@ -122,10 +125,19 @@ transition: 2s;
 transition: 2s;
 	font-family: 'Chapaza_Italic';
 	opacity: 0;
-
+	height: 100px;
+	position: absolute;
+    z-index:1;
 }
 
 
+#entete:hover{
+background-color: white;
+}
+
+#entete:hover #entetebis{
+	opacity: 1
+}
 
 
 
@@ -136,8 +148,7 @@ transition: 2s;
     position: absolute;
     z-index:1;
     margin-left: 56em;
-    margin-bottom: ;
-    transition: 2s;
+    margin-bottom: 
 }
 
 #entete{
@@ -145,20 +156,6 @@ height: 100px;
 	position: relative;
     z-index:0;
 
-}
-
-#entetebis{
-		height: 100px;
-	position: relative;
-    z-index:1;
-}
-
-#entete:hover{
-background-color: white;
-}
-
-#entete:hover #entetebis{
-	opacity: 1
 }
 
 
@@ -228,7 +225,4 @@ border-radius: 5px;
 		flex-direction: column;
 }
 }
-
-
-
 
