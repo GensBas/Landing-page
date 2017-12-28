@@ -144,3 +144,17 @@ border-radius:5px;
 {
 border-radius: 5px;	 
 }
+
+@media screen and (max-width: 1550px)
+{
+#container3{
+	flex-direction: column;
+}
+}
+
+@media screen and (max-width:1205px)
+{
+#container2{
+		flex-direction: column;
+}
+}
