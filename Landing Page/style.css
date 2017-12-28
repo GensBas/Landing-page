@@ -5,8 +5,7 @@ html
 
 body
 {
-	background-image: url(nuage1.jpg);
-	
+	background-image: url(nuage1.jpg);	
 	background-size: 100%;
 
 }
@@ -88,16 +87,87 @@ justify-content: center;
 	justify-content: space-around;
 }
 
-#naruto
+#boruto
 {
-width: 60%
+ width: 3.5%;
+    position: absolute;
+    z-index:1;
+    margin-left: 56em;
+    transition: 2s;
+   opacity: 0;
 }
+
+#toppage:hover #boruto{
+  opacity: 1;
+}
+
+#entete
+{
+	display: flex;
+	justify-content: center;
+	background-color: blue;
+	color: grey; 
+	/*code couleur aussi possible tkt :) */
+transition: 2s;
+	font-family: 'Chapaza_Italic';
+	opacity: 1;
+}
+
+
+#entetebis{
+	display: flex;
+	justify-content: center;
+	color: grey; 
+	/*code couleur aussi possible tkt :) */
+transition: 2s;
+	font-family: 'Chapaza_Italic';
+	opacity: 0;
+
+}
+
+
+
+
+
+
+#pngnaruto{
+   
+    width: 3.5%;
+    position: absolute;
+    z-index:1;
+    margin-left: 56em;
+    margin-bottom: ;
+    transition: 2s;
+}
+
+#entete{
+height: 100px;
+	position: relative;
+    z-index:0;
+
+}
+
+#entetebis{
+		height: 100px;
+	position: relative;
+    z-index:1;
+}
+
+#entete:hover{
+background-color: white;
+}
+
+#entete:hover #entetebis{
+	opacity: 1
+}
+
 
 #texte1
 {
 
 	height: 220px;
 	width: 500px;
+
 }
 
 #texte2
@@ -158,3 +228,7 @@ border-radius: 5px;
 		flex-direction: column;
 }
 }
+
+
+
+
